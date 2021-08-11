@@ -3,10 +3,15 @@
 Repository for simulation data for "Closing the “Quantum Supremacy” Gap: Achieving Real-Time Simulation of a Random Quantum Circuit Using a New Sunway Supercomputer".
 
 
-Under the folder simulation\_data, there are two folders square\_10\_10\_40 and sycamore, each of them stores the quantum circuit to sample from (.qsim), the simulation results (amplitudes.zip), the underlying tensor network which produces those amplitudes (arrays.txt) and the contraction path information (path\_info.json)
+Under the folder simulation\_data, there are two folders square\_10\_10\_40 and sycamore, each of them stores the quantum circuit to sample from (.qsim), the simulation results (which is devided into two files\: output_1.txt.tar.bz2,output_2.txt.tar.bz2), the underlying tensor network which produces those amplitudes (arrays.txt) and the contraction path information (square\_10\_10\_40\:path.txt, sycamore\:path\_info.json)
 
+The file square\_10\_10\_40\path.txt contains all the necessary information to reproduce the slicing scheme and the tensor contraction path. Particularly, it is stored as a txt file with the following $3$ keys:
 
-The file path\_info.json contains all the necessary information to reproduce the slicing scheme and the tensor contraction path. Particularly, it is stored as a json file with the following $4$ keys:
+1.__cut__ the position to cut the tensor to reduce the memory of storing the tensor in every path
+2.__expand__ the routine of tensor contraction
+3.__merge__ the point to contract big tensors
+
+The file sycamore\path\_info.json contains all the necessary information to reproduce the slicing scheme and the tensor contraction path. Particularly, it is stored as a json file with the following $4$ keys:
 
 1. __inputs__ stores the indexing of tensor network separately by ',', each unicode stands for one index of a tensor.
 2. __sliced_inputs__ stores the indexing of the **sliced** tensor network with indices removed.
