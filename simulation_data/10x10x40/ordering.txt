@@ -1,0 +1,170 @@
+# CUT BETWEEN A AND B
+cut () 4 5
+cut () 14 15
+cut () 24 25
+cut () 34 35
+cut () 44 45
+cut () 54 55
+
+# EXPAND PATCH A
+expand A 0 
+expand A 1
+expand A 2
+expand A 3
+expand A 4
+expand A 14
+expand A 13
+expand A 12
+expand A 11
+expand A 10
+expand A 20
+expand A 21
+expand A 22
+expand A 23
+expand A 24
+expand A 30
+expand A 31
+expand A 32
+expand A 33
+expand A 34
+expand A 40
+expand A 41
+expand A 42
+expand A 43
+expand A 44
+expand A 50
+expand A 51
+expand A 52
+expand A 53
+expand A 54
+expand A 60
+expand A 61
+expand A 62
+expand A 63
+expand A 64
+
+# EXPAND PATCH C
+expand C 5
+expand C 6
+expand C 7
+expand C 8
+expand C 9
+expand C 15
+expand C 16
+expand C 17
+expand C 18
+expand C 19
+expand C 29
+expand C 28
+expand C 27
+expand C 26
+expand C 25
+expand C 39
+expand C 38
+expand C 37
+expand C 36
+expand C 35
+expand C 49
+expand C 48
+expand C 47
+expand C 46
+expand C 45
+expand C 59
+expand C 58
+expand C 57
+expand C 56
+expand C 55
+expand C 69
+expand C 68
+expand C 67
+expand C 66
+expand C 65
+
+# EXPAND PATCH B
+expand B 90
+expand B 80
+expand B 70
+expand B 91
+expand B 81
+expand B 71
+expand B 92
+expand B 82
+expand B 72
+
+# EXPAND PATCH D 
+expand D 99
+expand D 89
+expand D 79
+expand D 98
+expand D 88
+expand D 78
+expand D 97
+expand D 87
+expand D 77
+
+# EXPAND PATCH E1 
+expand E1 73
+
+# EXPAND PATCH E2 
+expand E2 83
+
+# EXPAND PATCH E3 
+expand E3 93
+
+# EXPAND PATCH F1 
+expand F1 74
+
+# EXPAND PATCH F2 
+expand F2 84
+
+# EXPAND PATCH F3 
+expand F3 94
+
+# EXPAND PATCH G1 
+expand G1 76
+
+# EXPAND PATCH G2 
+expand G2 86
+
+# EXPAND PATCH G3 
+expand G3 96
+
+# EXPAND PATCH H1 
+expand H1 75
+
+# EXPAND PATCH H2 
+expand H2 85
+
+# EXPAND PATCH H3 
+expand H3 95
+
+# MERGE PATCHES A-B
+merge A B
+# MERGE PATCHES C-D
+merge C D
+# MERGE PATCHES B-E1
+merge B E1
+# MERGE PATCHES E1-E2
+merge E1 E2
+# MERGE PATCHES E2-E3
+merge E2 E3
+# MERGE PATCHES E3-F1
+merge E3 F1
+# MERGE PATCHES F1-F2
+merge F1 F2
+# MERGE PATCHES F2-F3
+merge F2 F3
+# MERGE PATCHES D-G1
+merge D G1
+# MERGE PATCHES G1-G2
+merge G1 G2
+# MERGE PATCHES G2-G3
+merge G2 G3
+# MERGE PATCHES G3-H1
+merge G3 H1
+# MERGE PATCHES H1-H2
+merge H1 H2
+# MERGE PATCHES H2-H3
+merge H2 H3
+# MERGE PATCHES F3-H3
+merge F3 H3
