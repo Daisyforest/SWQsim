@@ -7,9 +7,9 @@ Under the folder simulation\_data, there are two folders square\_10\_10\_40 and 
 
 The file square\_10\_10\_40\path.txt contains all the necessary information to reproduce the slicing scheme and the tensor contraction path. Particularly, it is stored as a txt file with the following $3$ keys:  
 
- 1.__cut__ the position to cut the tensor to reduce the memory of storing the tensor in every path.  
- 2.__expand__ the routine of tensor contraction.  
- 3.__merge__ the point to contract big tensors.  
+    1.__cut__ the position to cut the tensor to reduce the memory of storing the tensor in every path.  
+    2.__expand__ the routine of tensor contraction.  
+    3.__merge__ the point to contract big tensors.  
 
 The file sycamore\path\_info.json contains all the necessary information to reproduce the slicing scheme and the tensor contraction path. Particularly, it is stored as a json file with the following $4$ keys:
 
